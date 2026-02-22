@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Paying Jobs - USA, UK, CANADA</title>
+    <style>
+        /* মেইন বডি সেটআপ */
+        body { 
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+            background-color: #f0f2f5; 
+            margin: 0; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+        }
+
+        /* কন্টেইনার কার্ড */
+        .card { 
+            background: white; 
+            border-radius: 16px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+            width: 95%; 
+            max-width: 500px; 
+            overflow: hidden; 
+            text-align: center; 
+            border: 1px solid #e0e0e0;
+        }
+
+        /* ইমেজ কোয়ালিটি কন্ট্রোল */
+        .header-img { 
+            width: 100%; 
+            height: auto; 
+            display: block;
+            object-fit: contain; /* ইমেজ যেন কেটে না যায় */
+            background-color: #fff;
+        }
+
+        .content { padding: 25px; }
+
+        h1 { 
+            font-size: 24px; 
+            color: #1a73e8; 
+            margin: 0 0 15px 0; 
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        p { 
+            color: #444; 
+            font-size: 16px; 
+            line-height: 1.6; 
+            margin-bottom: 20px;
+        }
+
+        /* টাইমার বক্স */
+        .timer-box { 
+            margin: 20px 0; 
+            font-size: 15px; 
+            color: #d93025; 
+            font-weight: bold; 
+            background: #fff0f0; 
+            padding: 12px; 
+            border-radius: 8px; 
+            border: 1px dashed #d93025;
+        }
+
+        /* প্রিমিয়াম বাটন */
+        .btn { 
+            display: inline-block; 
+            background: linear-gradient(135deg, #1a73e8 0%, #1557b0 100%);
+            color: white; 
+            padding: 18px 35px; 
+            border-radius: 50px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 18px; 
+            transition: all 0.3s ease; 
+            border: none; 
+            cursor: pointer; 
+            width: 85%;
+            box-shadow: 0 4px 15px rgba(26, 115, 232, 0.3);
+        }
+
+        .btn:hover { 
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(26, 115, 232, 0.4);
+        }
+
+        .footer-note { 
+            font-size: 13px; 
+            color: #777; 
+            margin-top: 20px; 
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <img src="https://i.ibb.co.com/rW6GzFn/job-image.jpg" alt="USA Job Vacancy" class="header-img">
+    
+    <div class="content">
+        <h1>USA, CANADA & UK BEST JOBS</h1>
+        <p>Your qualifications match our current high-paying openings. Secure your future today by completing the quick verification.</p>
+        
+        <div class="timer-box" id="timer-container">
+            System Verifying... Wait <span id="seconds">20</span>s
+        </div>
+
+        <a href="https://www.effectivegatecpm.com/zs98yqp45z?key=0b1f1d78775b9208c987c81d8abab343" 
+           target="_blank" 
+           id="main-btn" 
+           class="btn" 
+           onclick="startTimer()">
+           CONTINUE TO APPLY
+        </a>
+
+        <p class="footer-note">Note: Please stay on the destination page for 20 seconds to confirm application.</p>
+    </div>
+</div>
+
+<script>
+    function startTimer() {
+        let timeLeft = 20;
+        const secondsSpan = document.getElementById('seconds');
+        const timerBox = document.getElementById('timer-container');
+        
+        const countdown = setInterval(() => {
+            timeLeft--;
+            if (timeLeft >= 0) {
+                secondsSpan.innerText = timeLeft;
+            }
+            
+            if (timeLeft <= 0) {
+                clearInterval(countdown);
+                timerBox.innerHTML = "✅ Verification Successful!";
+                timerBox.style.backgroundColor = "#e6f4ea";
+                timerBox.style.color = "#1e8e3e";
+                timerBox.style.border = "1px solid #1e8e3e";
+            }
+        }, 1000);
+    }
+</script>
+
+</body>
+</html>
